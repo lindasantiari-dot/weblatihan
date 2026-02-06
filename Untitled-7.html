@@ -1,58 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Web | Portofolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-        <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Portofolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <header>
+    <div class="head">Homepage</div>
+    <nav>
+      <ul>
+        <li><a href="#home"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+        <li id="course-dropdown">
+          <a href="#"><i class="fas fa-graduation-cap"></i>&nbsp;Course</a>
+          <ul id="course-menu">
+            <li><a href="#web"><i class="fas fa-th-list"></i>&nbsp;Website</a></li>
+            <li><a href="#mobile"><i class="fas fa-th-list"></i>&nbsp;Mobile</a></li>
+            <li><a href="#warehouse"><i class="fas fa-th-list"></i>&nbsp;Warehouse</a></li>
           </ul>
-        </nav>
-      </div>
-      <main class="content">
-        <section class="hero">
-          <img src="girl.png" alt="" />
-          <div class="hero-content">
-            <h1>Profesi</h1>
-            <br />
-            <h2>Junior Content Writer</h2>
-            <br /><br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, aperiam dolore
-              assumenda velit repellendus recusandae magni consectetur mollitia facere incidunt
-              inventore perspiciatis debitis doloribus ullam minima culpa voluptatem. Repellendus,
-              option.
-            </p>
-            <a href="" class="action-btn">Profile Saya</a>
-          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="content" class="content-section">
+
+    </section>
+    <aside class="side-section">
+      <article class="side card">
+        <h3><i class="fas fa-images"></i>&nbsp;Gallery</h3>
+        <div class="image-slider">
+          <img class="slide" src="assets/image/gallery1.png" alt="Gallery Image 1">
+          <img class="slide" src="assets/image/gallery2.png" alt="Gallery Image 2">
+          <img class="slide" src="assets/image/gallery3.png" alt="Gallery Image 3">
+        </div>
+      </article>
+      <article class="side card">
+        <h3><i class="fas fas fa-user"></i>&nbsp;Profile</h3>
+        <section>
+          <table>
+            <tr>
+              <th rowspan="2"><img src="assets/image/profile.png" alt="profile"></th>
+              <td>
+                <b>Name.</b> Ni Putu Linda Santiari<br>
+                <b>Birth.</b> 07 Oktober 1990<br><br>
+                <b>Job.</b> Lecturer<br>
+                <b>University.</b> STIKOM Bali<br><br>
+                
+                <div class="social-icons">
+                  <i class="social fab fa-facebook"></i>
+                  <i class="social fab fa-linkedin"></i>
+                  <i class="social fab fa-instagram"></i>
+                </div>
+              </td>
+            </tr>
+          </table>
         </section>
-      </main>
-      <div class="footer">
-        <footer>
-          <ul>
-            <li>
-              <img src="instagram.png" alt="" /><a><p>Instagram</p></a>
-            </li>
-            <li>
-              <img src="facebook.png" alt="" /><a><p>Facebook</p></a>
-            </li>
-            <li>
-              <img src="linkedin.png" alt="" /><a><p>Linkedin</p></a>
-            </li>
-            <li>
-              <img src="telegram.png" alt="" /><a><p>Telegram</p></a>
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </div>
-  </body>
+      </article>
+    </aside>
+  </main>
+  <footer>
+    <p>&#169; 2024</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
